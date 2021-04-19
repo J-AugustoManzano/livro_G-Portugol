@@ -1,0 +1,20 @@
+algoritmo SALARIO;
+
+variáveis 
+  HT, VH, PD, SB, TD, SL : real;
+fim-variáveis 
+
+início
+  imprima("Quantas horas de trabalho?"); 
+  HT := leia();
+  imprima("Qual o valor da hora?"); 
+  VH := leia();
+  imprima("Qual o percentual de desconto?"); 
+  PD := leia();
+  SB := HT * VH;
+  TD := (PD/100) * SB;
+  SL := SB - TD; 
+  imprima("Salario bruto ...: ", SB);
+  imprima("Desconto ........: ", TD);
+  imprima("Salario liquido .: ", SL);
+fim

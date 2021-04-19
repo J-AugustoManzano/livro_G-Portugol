@@ -1,0 +1,9 @@
+algoritmo LACO7;
+variáveis
+  I : inteiro;
+fim-variáveis 
+início
+  para I de 1 até 20 passo 2 faça
+    imprima(I);
+  fim-para
+fim 

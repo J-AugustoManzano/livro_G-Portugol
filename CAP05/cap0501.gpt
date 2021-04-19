@@ -1,0 +1,25 @@
+algoritmo TABELA1;
+variáveis  
+  I, R : inteiro; 
+  A, B : matriz[10] de inteiros;
+fim-variáveis
+início
+  imprima("Indice de Tabela");
+  imprima(" ");
+  imprima("Informe os dados solicitados");
+  imprima(" ");
+  para I de 0 até 9 faça
+    A[I] := leia();
+  fim-para
+  para I de 0 até 9 faça
+    R := I % 2;
+    se (R = 0) então 
+      B[I] := A[I] * 5;
+    senão
+      B[I] := A[I] + 5;
+    fim-se
+  fim-para
+  para I de 0 até 9 faça
+    imprima("B[", I, "] = ", B[I]);
+  fim-para
+fim

@@ -1,0 +1,22 @@
+algoritmo FATORIAL4;
+
+variáveis
+  ENTRA, I : inteiro;
+fim-variáveis
+
+início
+  ENTRA := leia();
+  imprima(fatorial(ENTRA));
+fim
+
+função fatorial(N : inteiro) : inteiro
+início
+  se (N < 0) então
+    retorne 0;
+  fim-se
+  se (N = 0) então
+    retorne 1;
+  senão
+    retorne N * fatorial(N - 1);
+  fim-se
+fim

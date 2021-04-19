@@ -1,0 +1,62 @@
+algoritmo PESQUISA_BINARIA; // (cap0701.gpt)
+
+variáveis
+  VLR : matriz[10] de inteiros;
+  I, J, COMECO, FINAL, MEIO, PESQ, X : inteiro;
+  RESP : caractere;
+  ACHA : lógico;
+fim-variáveis
+
+início
+
+  para I de 0 até 9 passo 1 faça 
+    VLR[I] := leia();
+  fim-para
+
+  // {*** início trecho de ordenação ***}
+
+  para I de 0 até 8 passo 1 faça
+    para J de I + 1 até 9 passo 1 faça
+      se (VLR[I] > VLR[J]) então
+        X := VLR[I];
+        VLR[I] := VLR[J] ;
+        VLR[J] := X;
+      fim-se
+    fim-para
+  fim-para
+
+  // {*** fim trecho de ordenação ***}
+
+  // {*** início trecho de pesquisa binária ***}
+
+  RESP := 'S';
+  enquanto (RESP = 'S') ou (RESP = 's') faça
+    imprima("Entre o nome a ser pesquisado:");
+    PESQ := leia();
+    COMECO := 0;
+    FINAL := 9;
+    ACHA := falso;
+    enquanto (COMECO <= FINAL) e (ACHA = falso) faça
+      MEIO := (COMECO + FINAL) / 2;
+      se (PESQ = VLR[MEIO]) então
+        ACHA := verdadeiro;
+      senão
+        se (PESQ < VLR[MEIO]) então
+          FINAL := MEIO - 1;
+        senão
+          COMECO := MEIO + 1;
+        fim-se
+      fim-se
+    fim-enquanto
+    se (ACHA = verdadeiro) então
+      imprima(PESQ, " foi localizado na posicao ", MEIO);
+    senão
+      imprima(PESQ, " não foi localizado");
+    fim-se
+    imprima("Deseja continuar? (S)/(N)AO:");
+    RESP := leia();
+  fim-enquanto
+
+  // {*** fim trecho de pesquisa binária ***}
+
+fim

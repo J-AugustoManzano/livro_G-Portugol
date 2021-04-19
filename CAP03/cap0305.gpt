@@ -1,0 +1,11 @@
+algoritmo CONDICAO5;
+variáveis
+  N : inteiro;
+fim-variáveis
+início
+  imprima("Entre um numero:");
+  N := leia();
+  se não (N <= 3) então 
+    imprima(N);
+  fim-se
+fim

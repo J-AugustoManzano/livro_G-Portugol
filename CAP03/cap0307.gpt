@@ -1,0 +1,14 @@
+algoritmo CONDICAO7;
+variáveis
+  N, R : inteiro;
+fim-variáveis
+início
+  imprima("Entre um valor numerico inteiro:");
+  N := leia();
+  R := N % 2;
+  se (R = 0) então 
+    imprima("Valor par.");
+  senão
+    imprima("Valor impar.");
+  fim-se
+fim 

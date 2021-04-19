@@ -1,0 +1,13 @@
+algoritmo CONDICAO4;
+variáveis
+  SEXO : caractere;
+fim-variáveis
+início
+  imprima("Entre seu sexo:");
+  SEXO := leia();
+  se (SEXO = 'M') ou (SEXO = 'F') então 
+    imprima("Sexo valido.");
+  senão
+    imprima("Sexo invalido.");
+  fim-se
+fim

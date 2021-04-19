@@ -1,0 +1,16 @@
+algoritmo CONDICAO1;
+variáveis
+  A, B, X : inteiro;
+fim-variáveis
+início
+  imprima("Entre 1o. valor:");
+  A := leia();
+  imprima("Entre 2o. valor:");
+  B := leia();
+  se (A > B) então
+    X := A;
+    A := B;
+    B := X; 
+  fim-se
+  imprima("Os valores sao: ", A, " e ", B, "."); 
+fim

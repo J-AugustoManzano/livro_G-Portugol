@@ -1,0 +1,13 @@
+algoritmo CONDICAO3;
+variáveis
+  N : inteiro;
+fim-variáveis
+início
+  imprima("Entre numero:");
+  N := leia();
+  se (N >= 1) e (N <= 9) então
+    imprima("Valor na faixa de 1 a 9.");
+  senão
+    imprima("Valor fora da faixa.");
+  fim-se
+fim

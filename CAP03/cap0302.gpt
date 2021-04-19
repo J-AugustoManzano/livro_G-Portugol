@@ -1,0 +1,17 @@
+algoritmo CONDICAO2;
+variáveis
+  N1, N2, MD : real;
+fim-variáveis
+início
+  imprima("Entre 1a. nota:");
+  N1 := leia();
+  imprima("Entre 2a. nota:");
+  N2 := leia();
+  MD := (N1 + N2) / 2;
+  se (MD >= 5) então 
+    imprima("Aprovado"); 
+  senão 
+    imprima("Reprovado");
+  fim-se
+  imprima("com media: ", MD);
+fim

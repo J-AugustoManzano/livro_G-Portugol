@@ -1,0 +1,12 @@
+algoritmo LACO6;
+variáveis
+  N, I, R : inteiro;
+fim-variáveis 
+início
+  imprima("Entre um valor numerico:");
+  N := leia();
+  para I de 1 até 10 passo 1 faça
+    R := N * I;
+    imprima(N, " X ", I, " = ", R);
+  fim-para
+fim 

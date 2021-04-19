@@ -1,0 +1,14 @@
+algoritmo LACO2;
+variáveis
+  N, I, R : inteiro;
+fim-variáveis 
+início
+  imprima("Entre um valor numerico:");
+  N := leia();
+  I := 1;
+  enquanto não (I > 10) faça
+    R := N * I;
+    imprima(N, " X ", I, " = ", R);
+    I := I + 1;
+  fim-enquanto
+fim

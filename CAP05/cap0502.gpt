@@ -1,0 +1,21 @@
+algoritmo TABELA2;
+variáveis  
+  I, R, SOMA : inteiro;
+  A : matriz[5] de inteiros;
+fim-variáveis
+início
+  imprima("Informe os dados solicitados");
+  imprima(" ");
+  para I de 0 até 4 faça
+    A[I] := leia();
+  fim-para
+  SOMA := 0;
+  para I de 0 até 4 faça
+    R := A[I] % 2;
+    se (R <> 0) então
+      SOMA := SOMA + A[I];
+    fim-se
+  fim-para
+  imprima(" "); 
+  imprima("Soma = ", SOMA);
+fim

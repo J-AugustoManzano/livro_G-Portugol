@@ -1,0 +1,12 @@
+algoritmo ADICIONA_NUMEROS;
+variáveis
+  A, B, X : inteiro;
+fim-variáveis
+início
+  imprima("Entre o 1o. valor:");
+  A := leia();
+  imprima("Entre o 2o. valor:");
+  B := leia();
+  X := A + B;
+  imprima("O resultado da soma equivale a: ", X);
+fim

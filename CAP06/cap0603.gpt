@@ -1,0 +1,19 @@
+algoritmo FATORIAL3;
+
+variáveis
+  ENTRA, F, I : inteiro;
+fim-variáveis
+
+início
+  ENTRA := leia();
+  imprima(fatorial(ENTRA));
+fim
+
+função fatorial(N : inteiro) : inteiro
+início
+  F := 1;
+  para I de 1 até N faça
+    F := F * I;
+  fim-para
+  retorne F;
+fim

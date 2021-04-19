@@ -1,0 +1,17 @@
+algoritmo LACO5;
+variáveis
+  N, R : inteiro; 
+  RESP : caractere;
+fim-variáveis 
+início
+  RESP := 'S';
+  enquanto (RESP = 'S') ou (RESP = 's') faça
+    imprima("Entre um valor numerico:");
+    N := leia();
+    R := N * N;
+    imprima("O quadro de ", N, " equivale a ", R);
+    imprima("Deseja continuar?");
+    imprima("[S] para sim / outra letra para nao.");
+    RESP := leia();
+  fim-enquanto
+fim

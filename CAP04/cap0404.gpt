@@ -1,0 +1,14 @@
+algoritmo LACO4;
+variáveis
+  N, I, R : inteiro;
+fim-variáveis 
+início
+  imprima("Entre um valor numerico:");
+  N := leia();
+  I := 1;
+  repita
+    R := N * I;
+    imprima(N, " X ", I, " = ", R);
+    I := I + 1;
+  até não (I <= 10);
+fim

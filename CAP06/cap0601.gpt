@@ -1,0 +1,19 @@
+algoritmo FATORIAL1;
+
+variáveis
+  N, F, I : inteiro;
+fim-variáveis
+
+início
+  N := leia();
+  fatorial();
+fim
+
+função fatorial()
+início
+  F := 1;
+  para I de 1 até N faça
+    F := F * I;
+  fim-para
+  imprima(F);
+fim
